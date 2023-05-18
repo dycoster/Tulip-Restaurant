@@ -1,0 +1,180 @@
+/* Global styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'dosis', sans-serif;
+	background-color: #ccbbad;
+	color: #444;
+	display: flex;
+	flex-direction: column;
+    width: -webkit-fill-available;
+}
+
+/* Header styles */
+header {
+	/* background image styles */
+	background-color: #ccbbad;
+	min-height: 60vh;
+    width: 100%;
+	background-image: url(/resources/images/mushrooms1.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: top ;
+	display: flex;
+	flex-direction:row;
+	align-items: top;
+	justify-content: space-evenly;
+}
+/* nav styling */
+nav {
+	display: flex;
+	align-items: top;
+	justify-content: space-between;
+	max-width: 40%;
+	margin-top: 10vh;
+
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: fit-content;
+}
+
+nav li {
+	margin: 0 15px;
+	padding: 0.8rem;
+	border-radius: 5px;
+}
+
+nav a {
+	color: #FAF9F6;
+	text-decoration: none;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: #d88e66;
+}
+
+/* logo styling */ 
+
+#logo_container {
+	margin-top: 5vh;
+}
+
+
+/* button styling */ 
+
+button {
+	background-color:#8c996ed8;
+	border: solid;
+	border-color: #FAF9F6;
+	border-radius: 5px;
+	color:#FAF9F6;
+	padding: 1rem 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+	font-family: 'dosis', sans-serif;
+	font-size: 1.3rem;
+	transition-duration: 0.4s;
+	margin-top: 10vh;
+  }
+
+button:hover {
+	background-color:#8c996e; 
+	color:#edcda4;
+	border-color: #edcda4;
+  }
+
+/* Main styles */
+main {
+
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	align-items: center;
+    flex-direction: column;
+}
+
+.text {
+    max-inline-size: 75%;
+    text-align: left;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding-top: 5rem;
+}
+
+p {
+    padding: 5rem 20rem;
+    font-size: 1.1rem;
+    letter-spacing: 2;
+    line-height: 2.5;
+	/* background-color: #edcda4; */
+}
+
+.image_cont {
+    padding: 4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.image {
+	max-width: 35%;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* footer styles */
+
+
+footer {
+	background-color: #8c996e;
+	min-height: 10vh;
+    bottom:0;
+    width:100%;
+}
+
+.footer_nav {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	justify-content: center;
+	margin: 4vh;
+}
+
+.footer-a {
+	color:#edcda4;
+}
+
+.footer-a:hover {
+	color:#d88e66;
+}
+
+.fa {
+	background:none;
+	color:#edcda4;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+	color:#d88e66;
+  }
+
+  #fa-facebook {
+	font-size: 1.5rem;
+  }
+
+  #fa-instagram {
+	font-size: 1.5rem;
+  }
