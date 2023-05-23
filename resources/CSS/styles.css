@@ -14,7 +14,7 @@ header {
 	/* background image styles */
 	background-color: #ccbbad;
 	min-height: 75vh;
-	background-image: url(/resources/images/tomatoes.png);
+	background-image: url(../images/tomatoes.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;

@@ -14,9 +14,9 @@ body {
 header {
 	/* background image styles */
 	background-color: #ccbbad;
-	min-height: 60vh;
+	min-height: 25vh;
     width: 100%;
-	background-image: url(/resources/images/tulip_02.png);
+	background-image: url(../images/tulip_02.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;

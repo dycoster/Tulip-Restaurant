@@ -16,7 +16,7 @@ header {
 	background-color: #ccbbad;
 	min-height: 60vh;
     width: 100%;
-	background-image: url(/resources/images/pea_tart1.png);
+	background-image: url(../images/pea_tart1.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
