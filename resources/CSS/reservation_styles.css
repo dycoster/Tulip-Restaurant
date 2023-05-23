@@ -106,7 +106,7 @@ main {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-    max-inline-size: 75%;
+
     text-align: left;
 	padding-bottom: 5rem;
 }
