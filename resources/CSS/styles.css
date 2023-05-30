@@ -202,9 +202,8 @@ button {
   }
 
 button:hover {
-	background-color:#8c996e; 
-	color:#edcda4;
-	border-color: #edcda4;
+	background-color:#faf9f6af; 
+	color:#8c996e;
   }
 
 /* Main styles */
