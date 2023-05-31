@@ -78,13 +78,15 @@ header {
  
  /* Hamburger */
  .hamburger1 {
-   height: 45px;
-   margin: 10px;
+   height: 30px;
+   width: fit-content;
+   margin: 15px;
    display: -ms-grid;
    display: grid;
-   grid-template-rows: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
    justify-items: center;
    z-index: 120;
+   cursor: pointer;
  }
  
  .hamburger1 div {
@@ -95,6 +97,7 @@ header {
    margin-top: 7px;
    -webkit-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
+
  }
  
  #toggle1 {
@@ -112,11 +115,11 @@ header {
 		   transform: rotate(45deg);
    margin-top: -5px;
  }
- 
+/*  
  #toggle1:checked + .hamburger1 .bottom {
    -webkit-transform: scale(0);
 		   transform: scale(0);
- }
+ } */
  
  #toggle1:checked ~ .menu1 {
    height: 400px;
@@ -199,6 +202,7 @@ button {
 	font-size: 1.3rem;
 	transition-duration: 0.4s;
 	margin-top: 10vh;
+	cursor: pointer;
   }
 
 button:hover {
@@ -266,8 +270,9 @@ footer {
 
 .footer-a {
 	color:#edcda4;
+	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 
 .footer-a:hover {
