@@ -11,19 +11,38 @@
 </head>
 <body>
 	<header>
-		<nav>
+		<section class="p-menu1">
+			<nav id="navbar" class="navigation" role="navigation">
+			  <input id="toggle1" type="checkbox" />
+			  <label class="hamburger1" for="toggle1">
+				<div class="top"></div>
+				<div class="meat"></div>
+				<!-- <div class="bottom"></div> -->
+			  </label>
+			
+			  <nav class="menu1">
+				<a class="link1" href="./about.html">ABOUT</a>
+				<a class="link1" href="./dining.html">DINING</a>
+				<a class="link1" href="./reservations.html">RESERVATIONS</a>
+				<a class="link1" href="https://obee.com.au/tuliprestaurant/gift-voucher" method="get" target="_blank">VOUCHERS</a>
+				<a class="link1" href="./contact.html">CONTACT</a>
+			  </nav>
+		  </nav>
+		  </section>
+		<nav class="desktop-nav">
 			<ul>
-                <li><a href="./index.html">home</a></li>
 				<li><a href="./about.html">ABOUT</a></li>
 				<li><a href="./dining.html">DINING</a></li>
 				<li><a href="./reservations.html">RESERVATIONS</a></li>				
-				<li><a href="./reservations.html">VOUCHERS</a></li>
+				<li><a class="link1" href="https://obee.com.au/tuliprestaurant/gift-voucher" method="get" target="_blank">VOUCHERS</a></li>
 				<li><a href="./contact.html">CONTACT</a></li>
 			</ul>
 		</nav>
 		<div id="logo_container">
-			<img src="./resources/images/logo.png" id="logo">
-		</div>	
+			<a href="./index.html">
+				<img src="./resources/images/logo.png" id="logo">
+			</a>	
+		</div>
 		<div>
 			<form action="https://obee.com.au/tuliprestaurant" method="get" target="_blank">
 				<button type="submit">book now</button>
@@ -79,7 +98,7 @@
 
 	</main>
 	<footer>			
-		<nav class="footer_nav">
+		<nav class="footer-nav">
 			<ul>
 				<li><a href="./about.html" class="footer-a">ABOUT</a></li>
 				<li><a href="./dining.html" class="footer-a">DINING</a></li>

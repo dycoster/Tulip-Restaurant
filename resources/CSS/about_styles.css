@@ -16,9 +16,8 @@ header {
 	background-color: #ccbbad;
 	min-height: 60vh;
     width: 100%;
-	background-image: url(../images/corn1.png);
+	background-image: url(../images/tomatoes.png);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
 	background-position: top ;
 	display: flex;
@@ -121,7 +120,7 @@ header {
  } */
  
  #toggle1:checked ~ .menu1 {
-   height: 500px;
+   height: 400px;
  }
  
  
