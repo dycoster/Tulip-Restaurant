@@ -78,12 +78,12 @@ header {
  /* Hamburger */
  .hamburger1 {
    height: 30px;
-   width:fit-content;
    margin: 15px;
    display: -ms-grid;
    display: grid;
    grid-template-rows: repeat(2, 1fr);
    justify-items: center;
+   align-items: end;
    z-index: 120;
    cursor: pointer;
  }
@@ -175,10 +175,13 @@ header {
 
 /* logo styling */ 
 
-#logo_container {
+#logo-container {
 	margin-top: 5vh;
 }
 
+#phone-logo-container {
+	margin-top: 5vh;
+}
 
 /* button styling */ 
 
@@ -330,3 +333,26 @@ footer {
 		display: none;
 	}
   }
+
+  @media only screen and (max-width: 786px) {
+
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.p-menu1{
+		width: 100%;
+	}
+
+	button {
+		padding: 2rem 4rem;
+		font-size: 2.5rem;
+	}
+	.text {
+		max-inline-size: 90%;
+	}
+	p {
+		padding: 5rem 1rem;
+	}
+  }
+
