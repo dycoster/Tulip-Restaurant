@@ -7,6 +7,7 @@ body {
 	color: #444;
 	display: flex;
 	flex-direction: column;
+	width: 110%;
 } 
 
 /* Header styles */
@@ -29,7 +30,7 @@ header {
 	align-items: top;
 	justify-content: space-between;
 	max-width: 40%;
-	margin-top: 10vh;
+	margin-top: 8vh;
 
 }
 
@@ -189,7 +190,7 @@ header {
 /* button styling */ 
 
 button {
-	background-color:#8c996ed8;
+	background-color:#ccbbad;
 	border: solid;
 	border-color: #FAF9F6;
 	border-radius: 5px;
@@ -205,8 +206,9 @@ button {
   }
 
 button:hover {
-	background-color:#faf9f6af; 
-	color:#8c996e;
+	background-color:#8c996e; 
+	color:#FAF9F6;
+	border-color: #FAF9F6;
   }
 
 /* Main styles */
@@ -322,6 +324,21 @@ footer {
 	}
 	#navbar {
 		width: 90%;
+		margin-top: 5vh;
 	 }
-	
+	#logo {
+		width: 90px;
+	} 
+
+	#logo_container {
+		margin-top: 3vh;
+	}
+
+	header {
+		min-height: 60vh;
+	}
+
+	main {
+		min-height: 30vh;
+	}
   }  
