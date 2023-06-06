@@ -58,6 +58,16 @@ header {
 	color: #d88e66;
 }
 
+#voucher {
+	border:solid 1px #FAF9F6;
+	padding: 0.2rem 0.8rem;
+	border-radius: 5px;
+}
+
+#voucher:hover {
+	color: #d88e66;
+	background-color: #FAF9F6;
+}
 /* Dropdown menu */
 
 
