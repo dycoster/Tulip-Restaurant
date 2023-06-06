@@ -93,7 +93,7 @@ header {
    margin: 15px;
    display: -ms-grid;
    display: grid;
-   grid-template-rows: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr);
    justify-items: end;
    align-items: end;
    z-index: 120;
