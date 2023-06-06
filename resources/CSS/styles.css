@@ -176,11 +176,14 @@ header {
    transition: all 0.3s ease;
  }
 
-
 /* logo styling */ 
 
 #logo_container {
-	margin-top: 2vh;
+	margin-top: 5vh;
+}
+#logo {
+	width: 120px;
+	margin-left: 1rem;
 }
 
 /* button styling */ 
@@ -317,12 +320,8 @@ footer {
 	.f-li {
 		display: none;
 	}
-
-	#fa-facebook {
-		font-size: 2.5rem;
-	}
-
-	#fa-instagram {
-		font-size: 2.5rem;
-	}
+	#navbar {
+		width: 90%;
+	 }
+	
   }  
