@@ -30,7 +30,7 @@ header {
 	align-items: top;
 	justify-content: space-between;
 	max-width: 40%;
-	margin-top: 10vh;
+	margin-top: 8vh;
 
 }
 
@@ -83,7 +83,7 @@ header {
  #navbar {
 	width: 100%;
 	flex-direction: column;
-	margin-top: 10vh;
+	margin-top: 8vh;
 
  }
  
@@ -190,7 +190,9 @@ header {
 #logo-container {
 	margin-top: 5vh;
 }
-
+#logo {
+	width: 120px;
+}
 /* button styling */ 
 
 button {
@@ -356,13 +358,6 @@ footer {
 		margin: 0 0.8rem;
 	}
 
-	#fa-facebook {
-		font-size: 2.5rem;
-	}
-
-	#fa-instagram {
-		font-size: 2.5rem;
-	}
   }
 
   @media only screen and (max-width: 786px) {
@@ -372,6 +367,22 @@ footer {
 	}
 	p {
 		padding: 5rem 1rem;
+	}
+
+	#navbar {
+		width: 90%;
+		margin-top: 5vh;
+	 }
+	#logo {
+		width: 90px;
+	} 
+	
+	#logo_container {
+		margin-top: 3vh;
+	}
+
+	button {
+		font-size: 0.8rem;
 	}
   }
 

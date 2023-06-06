@@ -13,7 +13,7 @@ body {
 /* Header styles */
 header {
 	background-color: #ccbbad;
-	min-height: 75vh;
+	min-height: 70vh;
 	background-image: url(../images/tulip_02.png);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -216,7 +216,7 @@ main {
 
 	margin: 2.5rem;
 	padding: 0;
-	height: 20vh; 
+	height: 30vh; 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -236,7 +236,6 @@ h2 {
 	flex-direction: row;
 	justify-content: space-around;
 	width: 80%;
-	/* background-color: #edcda4; */
 }
 
 p a {
@@ -336,9 +335,5 @@ footer {
 
 	header {
 		min-height: 60vh;
-	}
-
-	main {
-		min-height: 30vh;
 	}
   }  
