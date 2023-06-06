@@ -203,21 +203,34 @@ main {
 }
 
 .text {
-    max-inline-size: 75%;
     text-align: left;
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 h1 {
     font-size: 2.5rem;
     padding-top: 5rem;
+	text-align: center;
+}
+
+.location {
+	padding: 0 2rem;
+}
+
+.opening-hours {
+	padding: 0 2rem;
 }
 
 p {
-    padding: 5rem 20rem;
+    padding: 0rem 5rem;
     font-size: 1.1rem;
     letter-spacing: 2;
     line-height: 2.5;
-	/* background-color: #edcda4; */
 }
 
 .image_cont {
@@ -273,6 +286,7 @@ footer {
 .footer-a {
 	color:#edcda4;
 	text-decoration: none;
+	text-transform: uppercase;
 	font-size: 1.3rem;
 }
 
@@ -294,6 +308,11 @@ footer {
   #fa-facebook {
 	font-size: 1.5rem;
   }
+
+  #fa-instagram {
+	font-size: 1.5rem;
+  }
+
   @media only screen and (min-width: 1391px) {
 	.p-menu1 {
 		display: none;
@@ -310,13 +329,10 @@ footer {
 
   @media only screen and (max-width: 1024px) {
 
-	.text {
-		max-inline-size: 85%;
+	.info {
+		flex-direction: column;
 	}
 
-	p {
-		padding: 2rem 5rem;
-	}
 
 	.image_cont {
 		flex-direction: column;
@@ -347,16 +363,5 @@ footer {
   @media only screen and (max-width: 786px) {
 	.image_cont {
 		padding: 0;
-	}
-  }
-
-  @media only screen and (max-width: 600px) {
-
-	.text {
-		max-inline-size: 90%;
-	}
-
-	p {
-		padding: 5rem 1rem;
 	}
   }
