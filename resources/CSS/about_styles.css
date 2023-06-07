@@ -7,7 +7,7 @@ body {
 	color: #444;
 	display: flex;
 	flex-direction: column;
-	width: 110%;
+	width: 100%;
 }
 
 /* Header styles */
@@ -193,6 +193,7 @@ header {
 }
 #logo {
 	width: 120px;
+	margin-left: 1rem;
 }
 /* button styling */ 
 
@@ -372,7 +373,6 @@ footer {
 
 	#navbar {
 		width: 90%;
-		margin-top: 5vh;
 	 }
 	#logo {
 		width: 90px;
