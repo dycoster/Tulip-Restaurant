@@ -190,7 +190,7 @@ header {
 /* button styling */ 
 
 button {
-	background-color:#ccbbad;
+	background-color: #8c996e;
 	border: solid;
 	border-color: #FAF9F6;
 	border-radius: 5px;
@@ -206,7 +206,7 @@ button {
   }
 
 button:hover {
-	background-color:#8c996e; 
+	background-color:#ccbbad; 
 	color:#FAF9F6;
 	border-color: #FAF9F6;
   }
