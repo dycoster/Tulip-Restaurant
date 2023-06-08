@@ -127,11 +127,6 @@ header {
    margin-top: -5px;
  }
  
- /* #toggle1:checked + .hamburger1 .bottom {
-   -webkit-transform: scale(0);
-		   transform: scale(0);
- } */
- 
  #toggle1:checked ~ .menu1 {
    height: 400px;
  }
@@ -184,13 +179,12 @@ header {
    transition: all 0.3s ease;
  }
 
-
-
 /* logo styling */ 
 
 #logo-container {
 	margin-top: 5vh;
 }
+
 #logo {
 	width: 120px;
 	margin-left: 1rem;
@@ -238,11 +232,11 @@ h1 {
 }
 
 p {
-    padding: 5rem 20rem;
+    padding: 3rem 15rem;
     font-size: 1.1rem;
     letter-spacing: 2;
     line-height: 2.5;
-	/* background-color: #edcda4; */
+	margin: 0;
 }
 
 .image_cont {
@@ -330,14 +324,6 @@ footer {
 		padding: 5rem 8rem;
 	}
 
-	.image_cont {
-		flex-direction: column;
-		align-items: center;
-	}
-	.image {
-		max-width: 80%;
-		padding: 1rem;
-	}
   }
 
   @media only screen and (min-width: 1391px) {
@@ -347,6 +333,16 @@ footer {
   }
 
   @media only screen and (max-width: 1024px) {
+
+	
+	.image_cont {
+		flex-direction: column;
+		align-items: center;
+	}
+	.image {
+		max-width: 80%;
+		padding: 1rem;
+	}
 
 	.image_cont {
 		padding: 0;

@@ -2,29 +2,28 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'dosis', sans-serif;
+	font-family: dosis, sans-serif;
 	background-color: #ccbbad;
 	color: #444;
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-}
+	width: 105%;
+} 
 
 /* Header styles */
 header {
-	/* background image styles */
 	background-color: #ccbbad;
-	min-height: 60vh;
-    width: 100%;
-	background-image: url(../images/corn.png);
+	min-height: 70vh;
+	background-image: url(../images/tulip_02.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center ;
+	background-position: top;
 	display: flex;
 	flex-direction:row;
 	align-items: top;
 	justify-content: space-around;
 }
+
 /* nav styling */
 .desktop-nav {
 	display: flex;
@@ -72,7 +71,6 @@ header {
 	color: #d88e66;
 	background-color: #FAF9F6;
 }
-
 /* Dropdown menu */
 
 
@@ -84,8 +82,7 @@ header {
  #navbar {
 	width: 100%;
 	flex-direction: column;
-	margin-top: 8vh;
-
+	margin-top: 7vh;
  }
  
  /* Hamburger */
@@ -109,6 +106,7 @@ header {
    margin-top: 7px;
    -webkit-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
+
  }
  
  #toggle1 {
@@ -184,7 +182,6 @@ header {
 #logo_container {
 	margin-top: 5vh;
 }
-
 #logo {
 	width: 120px;
 	margin-left: 1rem;
@@ -193,11 +190,11 @@ header {
 /* button styling */ 
 
 button {
-	background-color:#8c996ed8;
+	background-color: #8c996e;
 	border: solid;
-	border-color: #edcda4;
+	border-color: #FAF9F6;
 	border-radius: 5px;
-	color:#edcda4;
+	color:#FAF9F6;
 	padding: 1rem 2rem;
 	text-align: center;
 	text-transform: uppercase;
@@ -205,76 +202,47 @@ button {
 	font-family: 'dosis', sans-serif;
 	font-size: 1.3rem;
 	transition-duration: 0.4s;
+	cursor: pointer;
   }
 
-  button:hover {
-	background-color:#edcda4; 
-	color:#d88e66;
+button:hover {
+	background-color:#ccbbad; 
+	color:#FAF9F6;
+	border-color: #FAF9F6;
   }
-
 
 /* Main styles */
 main {
 
-	margin: 0 auto;
+	margin: 2.5rem;
 	padding: 0;
+	height: 30vh; 
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-    flex-direction: column;
-}
-
-.text {
-    max-inline-size: 75%;
-    text-align: left;
 }
 
 h1 {
-    font-size: 2.5rem;
-    padding-top: 5rem;
+	font-size: 3rem;
+	letter-spacing: 3px;
+	color:#444;
 }
 
-p {
-    padding: 3rem 15rem;
-    font-size: 1.1rem;
-    letter-spacing: 2;
-    line-height: 2.5;
-	margin:0;
+h2 {
+	margin-top: 0;
 }
 
-.sample-menu {
-	padding: 4rem 0rem;
-	margin: 0rem 14rem;
-	text-align: center;
-	background-color: #edcda493;
-	font-size: 1.1rem;
-    line-height: 1.5;
-}
-
-.image_cont {
-    padding: 4rem;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-}
-
-.image {
-	max-width: 20%;
-}
-
-img {
-	max-width: 100%;
+p a {
+	color:#444;
+	text-decoration: none;
+	cursor: pointer;
 }
 /* footer styles */
-
-
-
-
 footer {
 	background-color: #8c996e;
 	min-height: 10vh;
-    bottom:0;
-    width:100%;
 }
+
 .footer-nav {
 	display: flex;
 	flex-direction: row;
@@ -299,8 +267,8 @@ footer {
 
 .footer-a {
 	color:#edcda4;
-	text-decoration: none;
 	text-transform: uppercase;
+	text-decoration: none;
 	font-size: 1.3rem;
 }
 
@@ -314,88 +282,53 @@ footer {
 	text-decoration: none;
   }
   
-  /* Add a hover effect if you want */
-  .fa:hover {
+.fa:hover {
 	color:#d88e66;
   }
 
-  #fa-facebook {
+#fa-facebook {
 	font-size: 1.5rem;
   }
 
-  #fa-instagram {
+#fa-instagram {
 	font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 1390px) {
+@media only screen and (max-width: 1390px) {
 	.desktop-nav {
 		display: none;
 	}
-
-	p {
-		padding: 5rem 8rem;
-	}
-
-	.sample-menu{
-		margin: 0rem 8rem;
-	}
-
   }
 
-  @media only screen and (min-width: 1391px) {
+@media only screen and (min-width: 1391px) {
 	.p-menu1 {
 		display: none;
 	}
   }
 
-  @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 786px) {
 
-	.image_cont {
-		flex-direction: column;
-		align-items: center;
-	}
-	.image {
-		max-width: 80%;
-		padding: 1rem;
-	}
-	
-	.text {
-		max-inline-size: 85%;
-	}
-
-	p {
-		padding: 5rem 5rem;
-	}
-
-	.sample-menu {
-		margin: 0rem 5rem;
-	}
-
-	.image_cont {
-		padding: 0;
+	h1 {
+		font-size: 2rem;
 	}
 
 	.f-li {
 		display: none;
 	}
 
-	.button-div {
-		margin: 0 0.8rem;
-	}
-  }
+	#navbar {
+		width: 90%;
+		margin-top: 5vh;
+	 }
+	#logo {
+		width: 90px;
+	} 
 
-  @media only screen and (max-width: 786px) {
-
-	.text {
-		max-inline-size: 90%;
-	}
-
-	p {
-		padding: 5rem 1rem;
+	#logo_container {
+		margin-top: 3vh;
 	}
 
-	.sample-menu {
-		margin: 0rem 1rem;
+	header {
+		min-height: 60vh;
 	}
-
-  }
+  }  
