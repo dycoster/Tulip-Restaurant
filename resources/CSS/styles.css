@@ -17,7 +17,7 @@ body {
 /* Header styles */
 header {
 	background-color: #ccbbad;
-	min-height: 60vh;
+	min-height: 63vh;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -126,8 +126,8 @@ header {
  .hamburger1 div {
    background-color: #FAF9F6;
    position: relative;
-   width: 40px;
-   height: 5px;
+   width: 35px;
+   height: 4px;
    margin-top: 7px;
    -webkit-transition: all 0.2s ease-in-out;
    transition: all 0.2s ease-in-out;
@@ -140,13 +140,13 @@ header {
  #toggle1:checked + .hamburger1 .top {
    -webkit-transform: rotate(-45deg);
 		   transform: rotate(-45deg);
-   margin-top: 22.5px;
+   margin-top: 24.5px;
  }
  
  #toggle1:checked + .hamburger1 .meat {
    -webkit-transform: rotate(45deg);
 		   transform: rotate(45deg);
-   margin-top: -5px;
+   margin-top: -4px;
  }
  
  #toggle1:checked ~ .menu1 {
