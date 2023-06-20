@@ -430,7 +430,7 @@ header {
 @media only screen and (max-width: 786px) {
 
 	.nav-links{
-		height: 35vh;
+		height: 85vh;
 		top: 15vh;
 		width: 100%;
 	}
@@ -465,8 +465,9 @@ header {
   @media only screen and (max-width: 786px) {
 
 	#home-nav-li {
-		height: 45vh;
+		height: 85vh;
 	}
+
 	#home-h1 {
 		font-size: 2rem;
 	}
