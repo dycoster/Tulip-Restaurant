@@ -119,6 +119,8 @@ header {
 #logo {
 	width: 120px;
 	margin-left: 1rem;
+	background-color: #faf9f644;
+	border-radius: 5px;
 }
 /* button styling */ 
 
