@@ -52,7 +52,6 @@ header {
 	display: flex;
 	align-items: top;
 	justify-content: space-between;
-	max-width: 40%;
 	margin-top: 8vh;
 
 }
@@ -62,7 +61,6 @@ header {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	height: fit-content;
 }
 
 .desktop-nav li {
@@ -95,111 +93,22 @@ header {
 	background-color: #FAF9F6;
 }
 
-/* Dropdown menu */
+/* burger */
 
 
-.p-menu1{
-	height: 100%;
-	min-width: 250px;
- }
- 
- #navbar {
-	width: 100%;
-	flex-direction: column;
-	margin-top: 8vh;
+.burger {
+    display: none;
+    cursor: pointer;
+}
 
- }
- 
- /* Hamburger */
- .hamburger1 {
-   height: 30px;
-   margin: 15px;
-   display: -ms-grid;
-   display: grid;
-   grid-template-rows: repeat(3, 1fr);
-   justify-items: end;
-   align-items: end;
-   z-index: 120;
-   cursor: pointer;
- }
- 
- .hamburger1 div {
-   background-color: #FAF9F6;
-   position: relative;
-   width: 35px;
-   height: 4px;
-   margin-top: 7px;
-   -webkit-transition: all 0.2s ease-in-out;
-   transition: all 0.2s ease-in-out;
- }
- 
- #toggle1 {
-   display: none;
- }
- 
- #toggle1:checked + .hamburger1 .top {
-   -webkit-transform: rotate(-45deg);
-		   transform: rotate(-45deg);
-   margin-top: 24.5px;
- }
- 
- #toggle1:checked + .hamburger1 .meat {
-   -webkit-transform: rotate(45deg);
-		   transform: rotate(45deg);
-   margin-top: -4px;
- }
- 
- #toggle1:checked ~ .menu1 {
-   height: 400px;
- }
- 
- 
- /* Menu */
- .menu1 {
-   width: 100%;
-   background-color: #8c996e;
-   margin: 0;
-   display: -ms-grid;
-   display: grid;
-   grid-template-rows: 1fr repeat(4, 0.5fr);
-   grid-row-gap: 25px;
-   padding: 0;
-   list-style: none;
-   clear: both;
-   width: auto;
-   text-align: center;
-   height: 0px;
-   overflow: hidden;
-   transition: height .4s ease;
-   z-index: 120;
-   -webkit-transition: all 0.3s ease;
-   transition: all 0.3s ease;
- }
- 
- .menu1 a:first-child {
-   margin-top: 40px;
- }
- 
- .menu1 a:last-child {
-   margin-bottom: 40px;
- }
- 
- .link1 {
-   width: 100%;
-   margin: 0;
-   padding: 10px 0;
-   color:#FAF9F6;
-	text-decoration: none;
-	font-size: 1.3rem;
-	text-transform: uppercase;
- }
- 
- .link1:hover {
-   background-color: #FAF9F6;
-   color: #8c996e;
-   -webkit-transition: all 0.3s ease;
-   transition: all 0.3s ease;
- }
+.burger > div {
+    width: 25px;
+    height: 2px;
+    background-color: #FAF9F6;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
 
 /* logo styling */ 
 
@@ -229,7 +138,8 @@ button {
   }
 
   button:hover {
-	background-color:#edcda4; 
+	background-color:#FAF9F6; 
+	border-color: #FAF9F6;
 	color:#d88e66;
   }
 
@@ -426,54 +336,109 @@ footer {
   }
 
   /* general media queries */
-  
-  @media only screen and (min-width: 1391px) {
-	.p-menu1 {
-		display: none;
+
+  @media screen and (max-width: 1024px) {
+
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 52vh;
+        top: 11vh;
+        background-color: #8c996e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+		justify-content: space-evenly;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFadeIn{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes navLinkFadeOut{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(+45deg) translate(-5px, -5px);
+}
+
+header {
+	justify-content: space-between;
+}
+
+.burger {
+	padding-right: 2rem;
+}
+.image_cont {
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+}
+.image {
+	max-width: 80%;
+	padding: 1rem;
+}
+
+.f-li {
+	display: none;
+}
+
+.button-div {
+	margin: 0 0.8rem;
+}
+}
+
+@media only screen and (max-width: 786px) {
+
+	.nav-links{
+		height: 35vh;
+		top: 15vh;
+		width: 100%;
 	}
-  }
-
-      
-  @media only screen and (max-width: 1390px) {
-	.desktop-nav {
-		display: none;
-	}
-  }
-
-  @media only screen and (max-width: 1024px) {
-
-	.image_cont {
-		flex-direction: column;
-		align-items: center;
-        padding: 0;
-	}
-	.image {
-		max-width: 80%;
-		padding: 1rem;
-	}
-
-	.f-li {
-		display: none;
-	}
-
-	.button-div {
-		margin: 0 0.8rem;
-	}
-  }
-
-  @media only screen and (max-width: 786px) {
-
-	.link1 {
-		font-size: 1rem;
-	}
-
+	.nav-links li a {
+	font-size: 1rem;
+}
 	p {
 		font-size: 1rem;
 	}
 
-	#navbar {
-		width: 90%;
-	 }
 	#logo {
 		width: 90px;
 	} 
@@ -483,12 +448,23 @@ footer {
 	}
 
 	button {
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
   }
-  /* home specific queries */
+
+
+  /* HOME specific queries */
+  @media only screen and (max-width: 1024px) {
+	#home-nav-li {
+		height: 59vh;
+	}
+  }
+
   @media only screen and (max-width: 786px) {
 
+	#home-nav-li {
+		height: 45vh;
+	}
 	#home-h1 {
 		font-size: 2rem;
 	}
@@ -499,7 +475,8 @@ footer {
 	}
   }  
 
-  /* About & dining specific queries */
+
+  /* ABOUT & DINING specific queries */
 
   @media only screen and (max-width: 1390px) {
 
@@ -536,14 +513,14 @@ footer {
 		margin: 0rem 1rem;
 	}
 	#about-header {
-		min-height: 40vh;
+		min-height: 50vh;
 	}
 	#dining-header {
-		min-height: 40vh;
+		min-height: 50vh;
 	}
   }
 
-  /* reservation specific queries */
+  /* RESERVATIONS specific queries */
 
   @media only screen and (max-width: 786px) {
 
@@ -565,11 +542,11 @@ footer {
 	}
 
 	#reservations-header {
-		min-height: 40vh;
+		min-height: 50vh;
 	}
   }
 
-  /* contact specific queries */
+  /* CONTACT specific queries */
 
   
   @media only screen and (max-width: 1024px) {
@@ -581,7 +558,7 @@ footer {
 
   @media only screen and (max-width: 786px) {
 	#contact-header {
-		min-height: 40vh;
+		min-height: 50vh;
 	}
 	.contact-p {
 		padding: 0 2rem;
@@ -594,3 +571,5 @@ footer {
 		padding: 1rem 2rem;
 	}
   }
+
+
