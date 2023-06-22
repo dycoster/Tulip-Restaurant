@@ -471,7 +471,9 @@ header {
 		top: 10vh;
 		width: 100%;
 	}
-
+	#logo {
+		width: 80px;
+}
 	p {
 		font-size: 1rem;
 	}
