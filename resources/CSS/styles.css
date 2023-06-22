@@ -607,4 +607,10 @@ header {
 	}
   }
 
+  @media only screen and (max-width: 400px) { 
+	button {
+		padding: 0.8rem 0.8rem;
+	}
+}
+
 
