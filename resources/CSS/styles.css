@@ -9,7 +9,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'dosis', sans-serif;
-	background-color: #ccbbad;
+	background: #ccbbad;
+	background: radial-gradient(circle, rgba(204,187,173,1) 0%, rgba(250,249,246,1) 100%);
 	color: #444;
 	display: flex;
 	flex-direction: column;
@@ -112,15 +113,14 @@ header {
     transition: all 0.3s ease;
 }
 
-
 /* logo styling */ 
-
 
 #logo {
 	width: 120px;
 	margin-left: 1rem;
 	border-radius: 5px;
 }
+
 /* button styling */ 
 
 button {
@@ -312,7 +312,8 @@ iframe {
 
 
 footer {
-	background-color: #8c996e;
+	background: rgb(140,153,110);
+	background: radial-gradient(circle, rgba(140,153,110,1) 0%, rgba(110,124,80,1) 100%);
 	min-height: 10vh;
     bottom:0;
     width:100%;
@@ -381,7 +382,8 @@ footer {
         right: 0px;
         height: 53vh;
         top: 10vh;
-        background-color: #8c996e;
+        background: rgb(140,153,110);
+		background: radial-gradient(circle, rgba(140,153,110,1) 0%, rgba(110,124,80,1) 100%);
         display: flex;
         flex-direction: column;
         align-items: center;
