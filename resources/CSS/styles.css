@@ -26,10 +26,6 @@ header {
 	background-size: cover;
 	background-position: top ;
 	overflow-x: hidden;
-	/* display: flex;
-	flex-direction:row;
-	align-items: top;
-	justify-content: space-around; */
 }
 #home-header{
 	background-image: url(../images/tulip_02.png);
@@ -59,7 +55,8 @@ header {
 	justify-content: space-between;
 	margin-top: 2vh;
 	align-items: center;
-
+	position: relative;
+	z-index: 1;
 }
 
 .desktop-nav ul {
@@ -391,6 +388,7 @@ footer {
         width: 40%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+		z-index: 2;
 
     }
     .nav-links li{
@@ -398,6 +396,7 @@ footer {
     }
     .burger {
         display: block;
+		z-index: 3;
     }
 
 .nav-active{
@@ -467,7 +466,7 @@ header {
 @media only screen and (max-width: 786px) {
 
 	.nav-links{
-		height: 75vh;
+		height: 48vh;
 		top: 10vh;
 		width: 100%;
 	}
@@ -487,14 +486,14 @@ header {
   /* HOME specific queries */
   @media only screen and (max-width: 1060px) {
 	#home-nav-li {
-		height: 60vh;
+		height: 58vh;
 	}
   }
 
   @media only screen and (max-width: 786px) {
 
 	#home-nav-li {
-		height: 84vh;
+		height: 48vh;
 	}
 
 	#home-h1 {
@@ -548,10 +547,10 @@ header {
 		display: block;
 	}
 	#about-header {
-		min-height: 50vh;
+		min-height: 60vh;
 	}
 	#dining-header {
-		min-height: 50vh;
+		min-height: 60vh;
 	}
   }
 
@@ -578,7 +577,7 @@ header {
 	}
 
 	#reservations-header {
-		min-height: 50vh;
+		min-height: 60vh;
 	}
   }
 
@@ -594,7 +593,7 @@ header {
 
   @media only screen and (max-width: 786px) {
 	#contact-header {
-		min-height: 50vh;
+		min-height: 60vh;
 	}
 	.contact-p {
 		padding: 0 2rem;
