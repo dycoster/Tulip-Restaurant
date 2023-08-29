@@ -223,6 +223,8 @@ h2 {
 	background-color: #edcda493;
 	font-size: 1.1rem;
     line-height: 1.5;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .sample-link {
 	display: none;
@@ -254,6 +256,9 @@ h2 {
     max-width: 75%;
 	padding: 1rem;
 }
+#dining-image img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* reservation specific styles */
 
@@ -270,11 +275,21 @@ h2 {
     }
     
 .reservation-container {
-        width: 40%;
+    width: 40%;
+	border-radius: 3vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0 2rem;
+    margin: 2rem 0;
+    background-color: #FAF9F6;
     }
     
 .voucher-container {
-        width:40%;
+    width:40%;
+	border-radius: 3vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 0 2rem;
+    margin: 2rem 0;
+    background-color: #FAF9F6;
     }
 
 iframe {
@@ -574,8 +589,20 @@ header {
   }
 
   /* RESERVATIONS specific queries */
+    @media only screen and (max-width: 1060px) {
+		#reservations-text {
+			max-inline-size: 90%;
+			justify-content: space-between;
+		}
+		.reservation-container {
+			width: 45%;
+		}
+		.voucher-container {
+			width: 45%;
+		}
+	}
 
-  @media only screen and (max-width: 786px) {
+  @media only screen and (max-width: 851px) {
 
 	#reservations-text {
 		flex-direction: column;
@@ -584,11 +611,11 @@ header {
 	}
 
 	.reservation-container {
-		width: 100%;
+		width: 80%;
 	}
 
 	.voucher-container {
-		width: 100%;
+		width: 80%;
 	}
 
 	#voucher-widget {
@@ -597,6 +624,18 @@ header {
 
 	#reservations-header {
 		min-height: 60vh;
+	}
+  }
+
+  @media only screen and (max-width: 500px) {
+	#reservations-text {
+		max-inline-size: 95%;
+	}
+	.reservation-container {
+		width: 100%;
+	}	
+	.voucher-container {
+		width: 100%;
 	}
   }
 
