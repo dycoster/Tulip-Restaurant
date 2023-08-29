@@ -27,6 +27,7 @@ header {
 	background-size: cover;
 	background-position: top ;
 	overflow-x: hidden;
+	overflow-y: hidden;
 }
 #home-header{
 	background-image: url(../images/tulip_02.png);
@@ -195,6 +196,10 @@ img {
 	max-width: 100%;
 }
 
+.images img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* home specific styles */
 
 #home-main {
@@ -276,16 +281,16 @@ h2 {
     
 .reservation-container {
     width: 40%;
-	border-radius: 3vh;
+	border-radius: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0 2rem;
+    padding: 0 2rem 2rem 2rem;
     margin: 2rem 0;
     background-color: #FAF9F6;
     }
     
 .voucher-container {
     width:40%;
-	border-radius: 3vh;
+	border-radius: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0 2rem;
     margin: 2rem 0;
@@ -301,6 +306,13 @@ iframe {
 
 /* contact specific styles */
 
+.contact-text {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2rem;
+    padding: 0 0 4vh 0;
+    margin: 4vh 0;
+    background-color: #FAF9F6;
+}
 .info {
 	display: flex;
 	flex-direction: row;
