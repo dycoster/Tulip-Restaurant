@@ -187,7 +187,7 @@ p a {
 	justify-content: space-evenly;
 }
 
-.image {
+.images {
 	max-width: 35%;
 }
 
@@ -452,7 +452,7 @@ header {
 	align-items: center;
 	padding: 0;
 }
-.image {
+.images {
 	max-width: 80%;
 	padding: 1rem;
 }
@@ -509,7 +509,23 @@ header {
 	}
   }  
 
-
+  
+  @media only screen and (orientation: landscape) and (max-height:800px) {
+	header {
+		height:102vh;
+	}
+	.desktop-nav {
+		height: 25vh;
+	}
+	.nav-links {
+		top: 25vh;
+		height: 75vh;
+	}
+	#home-nav-li {
+		top: 25vh;
+		height: 75vh;
+	}
+}
   /* ABOUT & DINING specific queries */
 
   @media only screen and (max-width: 1390px) {
