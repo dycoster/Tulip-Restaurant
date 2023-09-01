@@ -39,17 +39,17 @@ const navSlide = () => {
 navSlide();
 
 const observer = new IntersectionObserver(entries => {
-    // Loop over the entries
-    entries.forEach(entry => {
-      // If the element is visible
-      if (entry.isIntersecting) {
-        // Add the animation class
-        entry.target.classList.add('image-animation');
-      }
-    });
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('scroll-animation');
+      
+      // Stop observing the element once it's animated
+      observer.unobserve(entry.target);
+    }
   });
-  
-  const viewbox = document.querySelectorAll('.image');
-  viewbox.forEach(image => {
-    observer.observe(image);
-  });
+});
+
+const viewbox = document.querySelectorAll('.animate');
+viewbox.forEach(animate => {
+  observer.observe(animate);
+});

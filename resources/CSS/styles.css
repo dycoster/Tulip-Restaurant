@@ -91,6 +91,7 @@ header {
 	border-radius: 5px;
 	width: 60%;
 	margin: 0 3rem 2rem 3rem;
+	transition: background-color 0.4s ease-in-out;
 }
 
 #voucher:hover {
@@ -143,6 +144,7 @@ button {
 	background-color:#FAF9F6; 
 	border-color: #FAF9F6;
 	color:#d88e66;
+	transform: scale(1.05);
   }
 
 /* Main styles */
@@ -695,7 +697,7 @@ header {
     }
   }
   @media (prefers-reduced-motion: no-preference) {
-    .image-animation {
+    .scroll-animation {
       animation: enter-animation 1.2s 1;
     }
   }
